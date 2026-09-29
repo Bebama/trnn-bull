@@ -1,0 +1,10 @@
+<section class="page">
+  <h1>Hola, {{ session.getUser()?.nombre }}</h1>
+  <p class="lede">
+    Bienvenido a TRNN BULL CrossFit. Usa el menú para ver tus RM, logros y el WOD del calendario.
+  </p>
+  <ul class="chips">
+    <li>Rol: {{ session.getUser()?.rol }}</li>
+    <li>Estado: {{ session.getUser()?.status }}</li>
+  </ul>
+</section>

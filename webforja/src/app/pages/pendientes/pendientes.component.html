@@ -1,0 +1,24 @@
+<section class="page">
+  <h1>Pendientes</h1>
+  <p class="lede">Registros verificados por email a la espera de validación del box.</p>
+
+  <ul class="list" *ngIf="users.length; else empty">
+    <li *ngFor="let u of users">
+      <div>
+        <strong>{{ u.nombre }} {{ u.apellidos }}</strong>
+        <p>{{ u.email }} · {{ u.telefono }}</p>
+        <p class="muted">Nivel: {{ u.nivel }}</p>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn" (click)="approve(u)">Aprobar</button>
+        <button type="button" class="btn ghost" (click)="reject(u)">Rechazar</button>
+      </div>
+    </li>
+  </ul>
+  <ng-template #empty>
+    <p class="muted">No hay solicitudes pendientes.</p>
+  </ng-template>
+
+  <p class="ok" *ngIf="message">{{ message }}</p>
+  <p class="err" *ngIf="error">{{ error }}</p>
+</section>

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "crossfit",
+    "duration": "60 min",
+    "name": "CrossFit",
+    "description": "La clase principal. Calentamiento, fuerza o técnica y el WOD del día, en grupo y con escala.",
+    "level": "Todos los niveles"
+  },
+  {
+    "id": "fundamentos",
+    "duration": "60 min · 8 sesiones",
+    "name": "Fundamentos",
+    "description": "Sentadilla, peso muerto, presses y los primeros movimientos de gimnasia. Sales listo para entrar al WOD.",
+    "level": "Iniciación"
+  },
+  {
+    "id": "halterofilia",
+    "duration": "75 min",
+    "name": "Halterofilia",
+    "description": "Snatch, clean y jerk. Posiciones, tirón y recepción, con poca gente por coach.",
+    "level": "Desde fundamentos"
+  },
+  {
+    "id": "gimnasticos",
+    "duration": "60 min",
+    "name": "Gimnásticos",
+    "description": "Muscle-up, handstand, pecho a barra y anillas. Progresiones para quien quiere el movimiento estricto.",
+    "level": "Todos los niveles"
+  },
+  {
+    "id": "engine",
+    "duration": "50 min",
+    "name": "Engine",
+    "description": "Remo, carrera, assault y intervalos. Capacidad aeróbica sin convertir la hora en un castigo.",
+    "level": "Todos los niveles"
+  },
+  {
+    "id": "open-box",
+    "duration": "90 min",
+    "name": "Open box",
+    "description": "Entras con tu programación o a repetir un levantamiento. Hay coach en sala por si necesitas ojos.",
+    "level": "Con autonomía"
+  }
+]

@@ -1,0 +1,37 @@
+<div class="auth-page">
+  <div class="auth-card" data-reveal>
+    <img
+      class="auth-logo"
+      src="assets/trnn-bull-logo.png"
+      alt="TRNN BULL CrossFit"
+    />
+    <p class="brand-under">TRNN BULL / CROSSFIT</p>
+    <p class="box-label">{{ boxName }}</p>
+
+    <label>
+      Usuario
+      <input
+        type="text"
+        [(ngModel)]="usuario"
+        autocomplete="username"
+        placeholder="usuario o email"
+      />
+    </label>
+    <label>
+      Contraseña
+      <input
+        type="password"
+        [(ngModel)]="password"
+        autocomplete="current-password"
+        (keyup.enter)="entrar()"
+      />
+    </label>
+
+    <p class="form-error" *ngIf="error">{{ error }}</p>
+
+    <button class="btn btn-primary" type="button" [disabled]="loading" (click)="entrar()">
+      {{ loading ? 'Entrando…' : 'Entrar' }}
+    </button>
+    <button class="btn btn-ghost" type="button" (click)="irRegistro()">Registrarse</button>
+  </div>
+</div>

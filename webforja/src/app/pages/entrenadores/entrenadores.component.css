@@ -1,0 +1,66 @@
+.page h1 {
+  font-family: var(--display);
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.lede {
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.form {
+  display: grid;
+  gap: 0.8rem;
+  max-width: 560px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+input {
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  padding: 0.65rem 0.75rem;
+  text-transform: none;
+  font-size: 0.95rem;
+}
+
+.btn {
+  justify-self: start;
+  min-height: 42px;
+  padding: 0 1rem;
+  background: var(--red);
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.ok {
+  color: #7dffa3;
+}
+
+.err {
+  color: #ff6b6b;
+}
+
+@media (max-width: 560px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}

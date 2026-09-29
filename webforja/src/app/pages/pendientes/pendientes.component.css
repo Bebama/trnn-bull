@@ -1,0 +1,67 @@
+.page h1 {
+  font-family: var(--display);
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.lede {
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.list {
+  display: grid;
+  gap: 0.6rem;
+  max-width: 720px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #0c0c0c;
+}
+
+.list p {
+  margin-top: 0.25rem;
+  color: var(--muted);
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.btn {
+  min-height: 40px;
+  padding: 0 0.9rem;
+  background: var(--red);
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.ok {
+  color: #7dffa3;
+}
+
+.err {
+  color: #ff6b6b;
+}

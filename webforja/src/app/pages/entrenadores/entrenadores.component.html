@@ -1,0 +1,21 @@
+<section class="page">
+  <h1>Entrenadores</h1>
+  <p class="lede">Solo superusuario: crear cuentas de entrenador.</p>
+
+  <form class="form" (ngSubmit)="crear()">
+    <div class="grid-2">
+      <label>Usuario <input [(ngModel)]="form.usuario" name="usuario" required /></label>
+      <label>Contraseña <input type="password" [(ngModel)]="form.password" name="password" required /></label>
+    </div>
+    <div class="grid-2">
+      <label>Nombre <input [(ngModel)]="form.nombre" name="nombre" required /></label>
+      <label>Apellidos <input [(ngModel)]="form.apellidos" name="apellidos" /></label>
+    </div>
+    <label>Email <input type="email" [(ngModel)]="form.email" name="email" required /></label>
+    <label>Teléfono <input [(ngModel)]="form.telefono" name="telefono" /></label>
+    <button class="btn" type="submit">Crear entrenador</button>
+  </form>
+
+  <p class="ok" *ngIf="message">{{ message }}</p>
+  <p class="err" *ngIf="error">{{ error }}</p>
+</section>

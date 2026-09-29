@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-trnn-bull-crossfit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TRNN BULL CrossFit — misma arquitectura que COSTES (webforja + restforja)",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "npm start --prefix restforja",
+    "start:rest": "npm start --prefix restforja",
+    "start:web": "npm start --prefix webforja",
+    "build:web": "npm run build --prefix webforja",
+    "install:all": "npm install --prefix restforja && npm install --prefix webforja",
+    "build": "npm run install:all && npm run build:web",
+    "render:build": "npm run install:all && npm run build:web",
+    "render:start": "npm start --prefix restforja"
+  }
+}

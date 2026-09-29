@@ -1,0 +1,44 @@
+[
+  {
+    "id": "esencial",
+    "plan": "Esencial",
+    "amount": 69,
+    "cadence": "al mes · 8 clases",
+    "featured": false,
+    "features": [
+      "8 reservas al mes",
+      "Acceso a todas las clases",
+      "Semana de prueba al entrar",
+      "Baja con 7 días de aviso"
+    ],
+    "cta": "Quiero este plan"
+  },
+  {
+    "id": "ilimitado",
+    "plan": "Ilimitado",
+    "amount": 95,
+    "cadence": "al mes · lo habitual",
+    "featured": true,
+    "features": [
+      "Clases ilimitadas",
+      "Open box incluido",
+      "Fundamentos si entras de cero",
+      "Revisión de marcas cada trimestre"
+    ],
+    "cta": "Empezar aquí"
+  },
+  {
+    "id": "atleta",
+    "plan": "Atleta",
+    "amount": 125,
+    "cadence": "al mes · competición",
+    "featured": false,
+    "features": [
+      "Todo lo del ilimitado",
+      "Programación de competición",
+      "Una sesión de seguimiento al mes",
+      "Preparación de Open y clasificatorios"
+    ],
+    "cta": "Hablar con el box"
+  }
+]

@@ -1,0 +1,50 @@
+<section class="page">
+  <div class="head">
+    <h1>Calendario</h1>
+    <div class="nav-month">
+      <button type="button" (click)="prevMonth()">‹</button>
+      <strong>{{ monthNames[month - 1] }} {{ year }}</strong>
+      <button type="button" (click)="nextMonth()">›</button>
+    </div>
+  </div>
+  <p class="lede">
+    {{ isStaff ? 'Define el WOD de cada día.' : 'Consulta el entrenamiento del día.' }}
+  </p>
+
+  <div class="week-head">
+    <span *ngFor="let d of weekDays">{{ d }}</span>
+  </div>
+  <div class="grid">
+    <button
+      type="button"
+      class="day"
+      *ngFor="let c of cells"
+      [class.empty]="!c.date"
+      [class.has]="c.hasWod"
+      [class.selected]="c.date === selectedDate"
+      [disabled]="!c.date"
+      (click)="openDay(c)"
+    >
+      <span *ngIf="c.dayNum">{{ c.dayNum }}</span>
+    </button>
+  </div>
+
+  <div class="detail" *ngIf="selectedDate">
+    <h2>{{ selectedDate }}</h2>
+    <ng-container *ngIf="isStaff; else readOnly">
+      <label>Título <input [(ngModel)]="editTitle" /></label>
+      <label>
+        Descripción / WOD
+        <textarea rows="6" [(ngModel)]="editDescription"></textarea>
+      </label>
+      <button type="button" class="btn" (click)="saveDay()">Guardar WOD</button>
+    </ng-container>
+    <ng-template #readOnly>
+      <h3>{{ editTitle || 'Sin título' }}</h3>
+      <pre *ngIf="editDescription; else noWod">{{ editDescription }}</pre>
+      <ng-template #noWod><p class="muted">No hay WOD para este día.</p></ng-template>
+    </ng-template>
+    <p class="ok" *ngIf="message">{{ message }}</p>
+    <p class="err" *ngIf="error">{{ error }}</p>
+  </div>
+</section>

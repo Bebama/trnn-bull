@@ -1,0 +1,30 @@
+<div class="shell">
+  <aside class="sidebar">
+    <div class="side-brand">
+      <img src="assets/trnn-bull-logo.png" alt="TRNN BULL" />
+      <strong>TRNN BULL</strong>
+      <span>CROSSFIT</span>
+    </div>
+
+    <div class="side-user">
+      <p class="name">{{ session.displayName() }}</p>
+      <p class="role">{{ session.getUser()?.rol }}</p>
+    </div>
+
+    <nav>
+      <a routerLink="/app" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
+      <a routerLink="/app/ajustes" routerLinkActive="active">Ajustes</a>
+      <a routerLink="/app/logros" routerLinkActive="active">Logros</a>
+      <a routerLink="/app/rm" routerLinkActive="active">RM</a>
+      <a routerLink="/app/calendario" routerLinkActive="active">Calendario</a>
+      <a *ngIf="session.isStaff()" routerLink="/app/pendientes" routerLinkActive="active">Pendientes</a>
+      <a *ngIf="session.isSuper()" routerLink="/app/entrenadores" routerLinkActive="active">Entrenadores</a>
+    </nav>
+
+    <button type="button" class="logout" (click)="logout()">Cerrar sesión</button>
+  </aside>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

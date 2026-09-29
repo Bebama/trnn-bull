@@ -1,0 +1,34 @@
+<section class="page">
+  <h1>Ajustes</h1>
+  <p class="lede">Edita tu perfil. No puedes cambiar tu rol ni el estado de aprobación.</p>
+
+  <form class="form" (ngSubmit)="guardar()">
+    <div class="grid-2">
+      <label>Nombre <input [(ngModel)]="form.nombre" name="nombre" /></label>
+      <label>Apellidos <input [(ngModel)]="form.apellidos" name="apellidos" /></label>
+    </div>
+    <label>Teléfono <input [(ngModel)]="form.telefono" name="telefono" /></label>
+    <label>Email <input type="email" [(ngModel)]="form.email" name="email" /></label>
+    <div class="grid-2">
+      <label>
+        Contacto emergencia (nombre)
+        <input [(ngModel)]="form.emergenciaNombre" name="emergenciaNombre" />
+      </label>
+      <label>
+        Contacto emergencia (teléfono)
+        <input [(ngModel)]="form.emergenciaTelefono" name="emergenciaTelefono" />
+      </label>
+    </div>
+    <label>
+      Nueva contraseña (opcional)
+      <input type="password" [(ngModel)]="form.password" name="password" autocomplete="new-password" />
+    </label>
+
+    <p class="ok" *ngIf="message">{{ message }}</p>
+    <p class="err" *ngIf="error">{{ error }}</p>
+
+    <button class="btn" type="submit" [disabled]="saving">
+      {{ saving ? 'Guardando…' : 'Guardar' }}
+    </button>
+  </form>
+</section>

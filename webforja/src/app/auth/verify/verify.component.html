@@ -1,0 +1,31 @@
+<div class="auth-page">
+  <div class="auth-card" data-reveal>
+    <img class="auth-logo" src="assets/trnn-bull-logo.png" alt="TRNN BULL CrossFit" />
+    <p class="brand-under">TRNN BULL / CROSSFIT</p>
+    <h1>Verificación</h1>
+    <p class="lede">Introduce el código que te hemos enviado por email.</p>
+    <p class="dev-hint" *ngIf="hint">{{ hint }}</p>
+
+    <label>
+      Email
+      <input type="email" [(ngModel)]="email" />
+    </label>
+    <label>
+      Código
+      <input type="text" [(ngModel)]="code" maxlength="8" />
+    </label>
+
+    <p class="form-error" *ngIf="error">{{ error }}</p>
+    <p class="form-ok" *ngIf="success">{{ success }}</p>
+
+    <button
+      class="btn btn-primary"
+      type="button"
+      [disabled]="loading || !!success"
+      (click)="verificar()"
+    >
+      {{ loading ? 'Verificando…' : 'Verificar email' }}
+    </button>
+    <button class="btn btn-ghost" type="button" (click)="irLogin()">Ir al login</button>
+  </div>
+</div>

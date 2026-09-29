@@ -1,0 +1,18 @@
+{
+  "name": "restforja",
+  "version": "1.0.0",
+  "description": "API REST + static Angular TRNN BULL CrossFit (Express 4 + SQLite)",
+  "main": "restServicesWebForja.js",
+  "scripts": {
+    "start": "node restServicesWebForja.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemailer": "^6.10.1"
+  }
+}

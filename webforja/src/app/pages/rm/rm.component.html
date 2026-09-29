@@ -1,0 +1,42 @@
+<section class="page">
+  <h1>RM</h1>
+  <p class="lede">1RM en kg y porcentajes de entrenamiento (50–95 %).</p>
+
+  <label *ngIf="isStaff" class="pick">
+    Atleta
+    <select [(ngModel)]="selectedUserId" (ngModelChange)="onAthleteChange()">
+      <option value="">Selecciona atleta</option>
+      <option *ngFor="let a of athletes" [value]="a.id">
+        {{ a.nombre }} {{ a.apellidos }}
+      </option>
+    </select>
+  </label>
+
+  <div class="lift" *ngFor="let lift of lifts">
+    <div class="lift-head">
+      <h2>{{ labels[lift] || lift }}</h2>
+      <label>
+        1RM (kg)
+        <input
+          type="number"
+          step="0.5"
+          min="0"
+          [(ngModel)]="rms[lift]"
+          name="{{ lift }}"
+        />
+      </label>
+    </div>
+    <div class="pct-row">
+      <div class="pct" *ngFor="let p of percents">
+        <span>{{ p }}%</span>
+        <strong>{{ pct(rms[lift], p) }}</strong>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn" [disabled]="saving" (click)="save()">
+    {{ saving ? 'Guardando…' : 'Guardar RM' }}
+  </button>
+  <p class="ok" *ngIf="message">{{ message }}</p>
+  <p class="err" *ngIf="error">{{ error }}</p>
+</section>

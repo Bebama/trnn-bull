@@ -1,0 +1,67 @@
+<div class="auth-page">
+  <div class="auth-card wide" data-reveal>
+    <img class="auth-logo" src="assets/trnn-bull-logo.png" alt="TRNN BULL CrossFit" />
+    <p class="brand-under">TRNN BULL / CROSSFIT</p>
+    <h1>Registro</h1>
+
+    <div class="grid-2">
+      <label>
+        Nombre
+        <input type="text" [(ngModel)]="form.nombre" />
+      </label>
+      <label>
+        Apellidos
+        <input type="text" [(ngModel)]="form.apellidos" />
+      </label>
+    </div>
+
+    <label>
+      Fecha de nacimiento
+      <input type="date" [(ngModel)]="form.fechaNacimiento" />
+    </label>
+
+    <label>
+      Email
+      <input type="email" [(ngModel)]="form.email" autocomplete="email" />
+    </label>
+
+    <label>
+      Contraseña
+      <input type="password" [(ngModel)]="form.password" autocomplete="new-password" />
+    </label>
+
+    <label>
+      Teléfono
+      <input type="tel" [(ngModel)]="form.telefono" />
+    </label>
+
+    <fieldset>
+      <legend>Contacto de emergencia</legend>
+      <div class="grid-2">
+        <label>
+          Nombre
+          <input type="text" [(ngModel)]="form.emergenciaNombre" />
+        </label>
+        <label>
+          Teléfono
+          <input type="tel" [(ngModel)]="form.emergenciaTelefono" />
+        </label>
+      </div>
+    </fieldset>
+
+    <label>
+      Nivel
+      <select [(ngModel)]="form.nivel">
+        <option value="" disabled>Selecciona tu nivel</option>
+        <option *ngFor="let n of niveles" [value]="n">{{ n }}</option>
+      </select>
+    </label>
+
+    <p class="form-error" *ngIf="error">{{ error }}</p>
+
+    <button class="btn btn-primary" type="button" [disabled]="loading" (click)="enviar()">
+      {{ loading ? 'Enviando…' : 'Crear cuenta' }}
+    </button>
+    <button class="btn btn-ghost" type="button" (click)="volver()">Volver al login</button>
+  </div>
+</div>

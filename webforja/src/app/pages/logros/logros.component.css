@@ -1,0 +1,103 @@
+.page h1 {
+  font-family: var(--display);
+  font-size: 2.6rem;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.lede {
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.pick,
+.add label {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  max-width: 420px;
+  margin-bottom: 1rem;
+}
+
+select,
+input {
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #fff;
+  padding: 0.65rem 0.75rem;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 0.95rem;
+}
+
+.list {
+  display: grid;
+  gap: 0.55rem;
+  max-width: 640px;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #0c0c0c;
+}
+
+.list p {
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.list small {
+  color: var(--muted);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.add {
+  margin-top: 1.6rem;
+  display: grid;
+  gap: 0.7rem;
+  max-width: 420px;
+}
+
+.add h2 {
+  font-family: var(--display);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.btn {
+  justify-self: start;
+  min-height: 42px;
+  padding: 0 1rem;
+  background: var(--red);
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.link-btn {
+  background: transparent;
+  border: 0;
+  color: var(--red);
+  text-decoration: underline;
+  align-self: start;
+}
+
+.ok {
+  color: #7dffa3;
+}
+
+.err {
+  color: #ff6b6b;
+}

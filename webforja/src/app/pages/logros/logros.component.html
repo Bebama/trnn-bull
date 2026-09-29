@@ -1,0 +1,38 @@
+<section class="page">
+  <h1>Logros</h1>
+  <p class="lede">Movimientos y logros desbloqueados.</p>
+
+  <label *ngIf="isStaff" class="pick">
+    Atleta
+    <select [(ngModel)]="selectedUserId" (ngModelChange)="onAthleteChange()">
+      <option value="">Selecciona atleta</option>
+      <option *ngFor="let a of athletes" [value]="a.id">
+        {{ a.nombre }} {{ a.apellidos }}
+      </option>
+    </select>
+  </label>
+
+  <ul class="list" *ngIf="logros.length; else empty">
+    <li *ngFor="let l of logros">
+      <div>
+        <strong>{{ l.nombre }}</strong>
+        <p *ngIf="l.descripcion">{{ l.descripcion }}</p>
+        <small *ngIf="l.fecha">{{ l.fecha }}</small>
+      </div>
+      <button *ngIf="isStaff" type="button" class="link-btn" (click)="remove(l)">Quitar</button>
+    </li>
+  </ul>
+  <ng-template #empty>
+    <p class="muted">Aún no hay logros.</p>
+  </ng-template>
+
+  <div class="add" *ngIf="isStaff">
+    <h2>Añadir logro</h2>
+    <label>Nombre <input [(ngModel)]="nuevo.nombre" /></label>
+    <label>Descripción <input [(ngModel)]="nuevo.descripcion" /></label>
+    <button type="button" class="btn" (click)="add()">Añadir</button>
+  </div>
+
+  <p class="ok" *ngIf="message">{{ message }}</p>
+  <p class="err" *ngIf="error">{{ error }}</p>
+</section>

@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: trnn-bull
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm run render:build
+    startCommand: npm run render:start
+    healthCheckPath: /status
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production

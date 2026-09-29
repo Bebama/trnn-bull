@@ -1,0 +1,59 @@
+{
+  "lunes": [
+    { "time": "06:30", "name": "Fundamentos", "coach": "Hugo · Iniciación", "duration": "60 min" },
+    { "time": "07:30", "name": "CrossFit", "coach": "Lucía · Todos", "duration": "60 min" },
+    { "time": "09:30", "name": "CrossFit", "coach": "Nora · Todos", "duration": "60 min" },
+    { "time": "13:00", "name": "CrossFit", "coach": "Marco · Todos", "duration": "60 min" },
+    { "time": "17:30", "name": "Halterofilia", "coach": "Hugo · Desde fundamentos", "duration": "75 min" },
+    { "time": "18:30", "name": "CrossFit", "coach": "Lucía · Todos", "duration": "60 min" },
+    { "time": "19:30", "name": "CrossFit", "coach": "Nora · Todos", "duration": "60 min" },
+    { "time": "20:30", "name": "Engine", "coach": "Marco · Todos", "duration": "50 min" }
+  ],
+  "martes": [
+    { "time": "06:30", "name": "CrossFit", "coach": "Nora · Todos", "duration": "60 min" },
+    { "time": "07:30", "name": "CrossFit", "coach": "Lucía · Todos", "duration": "60 min" },
+    { "time": "09:30", "name": "Gimnásticos", "coach": "Nora · Todos", "duration": "60 min" },
+    { "time": "12:15", "name": "CrossFit", "coach": "Hugo · Todos", "duration": "60 min" },
+    { "time": "17:30", "name": "CrossFit", "coach": "Marco · Todos", "duration": "60 min" },
+    { "time": "18:30", "name": "Halterofilia", "coach": "Hugo · Desde fundamentos", "duration": "75 min" },
+    { "time": "19:30", "name": "CrossFit", "coach": "Lucía · Todos", "duration": "60 min" },
+    { "time": "20:30", "name": "Open box", "coach": "Marco · Con autonomía", "duration": "90 min" }
+  ],
+  "miercoles": [
+    { "time": "06:30", "name": "Fundamentos", "coach": "Lucía · Iniciación", "duration": "60 min" },
+    { "time": "07:30", "name": "CrossFit", "coach": "Hugo · Todos", "duration": "60 min" },
+    { "time": "09:30", "name": "CrossFit", "coach": "Marco · Todos", "duration": "60 min" },
+    { "time": "13:00", "name": "Engine", "coach": "Nora · Todos", "duration": "50 min" },
+    { "time": "17:30", "name": "CrossFit", "coach": "Lucía · Todos", "duration": "60 min" },
+    { "time": "18:30", "name": "CrossFit", "coach": "Hugo · Todos", "duration": "60 min" },
+    { "time": "19:30", "name": "Gimnásticos", "coach": "Nora · Todos", "duration": "60 min" },
+    { "time": "20:30", "name": "CrossFit", "coach": "Marco · Todos", "duration": "60 min" }
+  ],
+  "jueves": [
+    { "time": "06:30", "name": "CrossFit", "coach": "Marco · Todos", "duration": "60 min" },
+    { "time": "07:30", "name": "CrossFit", "coach": "Nora · Todos", "duration": "60 min" },
+    { "time": "09:30", "name": "Halterofilia", "coach": "Hugo · Desde fundamentos", "duration": "75 min" },
+    { "time": "12:15", "name": "CrossFit", "coach": "Lucía · Todos", "duration": "60 min" },
+    { "time": "17:30", "name": "Fundamentos", "coach": "Nora · Iniciación", "duration": "60 min" },
+    { "time": "18:30", "name": "CrossFit", "coach": "Hugo · Todos", "duration": "60 min" },
+    { "time": "19:30", "name": "CrossFit", "coach": "Lucía · Todos", "duration": "60 min" },
+    { "time": "20:30", "name": "Engine", "coach": "Marco · Todos", "duration": "50 min" }
+  ],
+  "viernes": [
+    { "time": "06:30", "name": "CrossFit", "coach": "Lucía · Todos", "duration": "60 min" },
+    { "time": "07:30", "name": "CrossFit", "coach": "Marco · Todos", "duration": "60 min" },
+    { "time": "09:30", "name": "CrossFit", "coach": "Hugo · Todos", "duration": "60 min" },
+    { "time": "13:00", "name": "CrossFit", "coach": "Nora · Todos", "duration": "60 min" },
+    { "time": "17:00", "name": "Open box", "coach": "Hugo · Con autonomía", "duration": "90 min" },
+    { "time": "18:00", "name": "CrossFit", "coach": "Lucía · Todos", "duration": "60 min" },
+    { "time": "19:00", "name": "CrossFit", "coach": "Nora · Todos", "duration": "60 min" },
+    { "time": "20:00", "name": "Team WOD", "coach": "Marco · Todos", "duration": "60 min" }
+  ],
+  "sabado": [
+    { "time": "09:30", "name": "Fundamentos", "coach": "Lucía · Iniciación", "duration": "60 min" },
+    { "time": "10:45", "name": "CrossFit", "coach": "Hugo · Todos", "duration": "60 min" },
+    { "time": "12:00", "name": "CrossFit", "coach": "Nora · Todos", "duration": "60 min" },
+    { "time": "13:15", "name": "Engine", "coach": "Marco · Todos", "duration": "50 min" }
+  ],
+  "domingo": []
+}

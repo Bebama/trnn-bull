@@ -1,0 +1,30 @@
+{
+  "lunes": {
+    "name": "Fuerza",
+    "lines": "Back squat 5×5\nLuego 12 min AMRAP\n10 burpees\n15 saltos al cajón"
+  },
+  "martes": {
+    "name": "Helen",
+    "lines": "3 rondas por tiempo\n400 m de carrera\n21 kettlebell swings (24/16 kg)\n12 dominadas"
+  },
+  "miercoles": {
+    "name": "Peso muerto",
+    "lines": "Deadlift 5×3\nLuego 15 min EMOM\nMin 1: 8 cal remo\nMin 2: 10 toes to bar"
+  },
+  "jueves": {
+    "name": "Grace",
+    "lines": "30 clean and jerks\npor tiempo\n43 / 30 kg\nEscala con barra vacía o mancuernas"
+  },
+  "viernes": {
+    "name": "Chipper",
+    "lines": "Por tiempo\n50 wall balls\n40 sit-ups\n30 swings\n20 burpees\n10 muscle-ups o anillas"
+  },
+  "sabado": {
+    "name": "Parejas",
+    "lines": "20 min AMRAP en parejas\n20 cal remo\n16 wall balls\n12 burpees over the bar"
+  },
+  "domingo": {
+    "name": "Descanso",
+    "lines": "El box cierra los domingos.\nEl lunes abrimos a las 6:30."
+  }
+}
