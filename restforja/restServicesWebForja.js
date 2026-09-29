@@ -626,7 +626,7 @@ if (fs.existsSync(webDist)) {
   console.warn('Angular build not found at ' + webDist + ' — run: npm run build --prefix webforja');
 }
 
-app.listen(port, function () {
+app.listen(port, '0.0.0.0', function () {
   console.log('TRNN BULL CrossFit listening at http://127.0.0.1:' + port);
   console.log('SQLite: ' + path.join(dataDir, 'trnnbull.db'));
   console.log('Seed / import users: superusuario/super123 , entrenador/coach123');

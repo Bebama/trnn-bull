@@ -4,8 +4,8 @@ services:
     runtime: node
     plan: free
     region: frankfurt
-    buildCommand: npm run render:build
-    startCommand: npm run render:start
+    buildCommand: npm install --prefix restforja
+    startCommand: npm start --prefix restforja
     healthCheckPath: /status
     envVars:
       - key: NODE_VERSION
